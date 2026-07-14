@@ -1,0 +1,6 @@
+names:
+- pothole
+nc: 1
+test: /kaggle/input/datasets/muskanverma24/pothole-detection-dataset-yolov11-optimized/test/images
+train: /kaggle/input/datasets/muskanverma24/pothole-detection-dataset-yolov11-optimized/train/images
+val: /kaggle/input/datasets/muskanverma24/pothole-detection-dataset-yolov11-optimized/valid/images

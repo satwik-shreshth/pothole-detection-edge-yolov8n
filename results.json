@@ -1,0 +1,219 @@
+{
+  "environment": {
+    "torch_version": "2.10.0+cu128",
+    "cuda_available": true,
+    "num_gpus": 2,
+    "gpu_names": [
+      "Tesla T4",
+      "Tesla T4"
+    ],
+    "python_version": "3.12.13"
+  },
+  "base_model": "yolov8n.pt",
+  "base_checkpoint_size_mb": 6.25,
+  "dataset_root": "/kaggle/input/datasets/muskanverma24/pothole-detection-dataset-yolov11-optimized",
+  "existing_yaml_found": [
+    "/kaggle/input/datasets/muskanverma24/pothole-detection-dataset-yolov11-optimized/data.yaml"
+  ],
+  "data_yaml_path": "/kaggle/working/data.yaml",
+  "num_classes": 1,
+  "class_names": [
+    "pothole"
+  ],
+  "training_epochs_requested": 400,
+  "training_elapsed_minutes_this_session": 168.09,
+  "resumed_from_checkpoint": false,
+  "run_dir": "/kaggle/working/runs/detect/yolov8n_pothole",
+  "training_metrics": {
+    "best_epoch": 247,
+    "best_precision": 0.9196,
+    "best_recall": 0.88592,
+    "best_mAP50": 0.93845,
+    "best_mAP50_95": 0.71271,
+    "final_epoch_precision": 0.92216,
+    "final_epoch_recall": 0.89311,
+    "final_epoch_mAP50": 0.93831,
+    "final_epoch_mAP50_95": 0.70931,
+    "total_epochs_run": 278,
+    "plot_paths": {
+      "box_loss": "/kaggle/working/plots/box_loss.png",
+      "cls_loss": "/kaggle/working/plots/cls_loss.png",
+      "dfl_loss": "/kaggle/working/plots/dfl_loss.png",
+      "precision": "/kaggle/working/plots/precision.png",
+      "recall": "/kaggle/working/plots/recall.png",
+      "precision_recall_combined": "/kaggle/working/plots/precision_recall.png",
+      "mAP50": "/kaggle/working/plots/map50.png",
+      "mAP50_95": "/kaggle/working/plots/map50_95.png",
+      "mAP_combined": "/kaggle/working/plots/map_combined.png"
+    }
+  },
+  "export_paths": {
+    "onnx": "/kaggle/working/runs/yolov8n_pothole/weights/best.onnx",
+    "ncnn": "/kaggle/working/runs/yolov8n_pothole/weights/best_ncnn_model"
+  },
+  "export_sizes_mb": {
+    "onnx": 11.7,
+    "ncnn": 11.63
+  },
+  "cpu_benchmark": [
+    {
+      "format": "PyTorch (.pt)",
+      "mean_latency_ms": 121.66613101959229,
+      "std_latency_ms": 4.340571139592316,
+      "min_latency_ms": 111.2203598022461,
+      "max_latency_ms": 131.64258003234863,
+      "throughput_fps": 8.219214267929395
+    },
+    {
+      "format": "ONNX",
+      "mean_latency_ms": 112.83555030822754,
+      "std_latency_ms": 3.1841691578478546,
+      "min_latency_ms": 107.06615447998047,
+      "max_latency_ms": 120.92781066894531,
+      "throughput_fps": 8.862455115150741
+    },
+    {
+      "format": "NCNN",
+      "mean_latency_ms": 95.02709865570068,
+      "std_latency_ms": 11.243425722519984,
+      "min_latency_ms": 83.27007293701172,
+      "max_latency_ms": 127.42972373962402,
+      "throughput_fps": 10.523314024593867
+    }
+  ],
+  "final_comparison_table": [
+    {
+      "format": "PyTorch (.pt)",
+      "size_mb": 6.25,
+      "mean_latency_ms": 121.66613101959229,
+      "throughput_fps": 8.219214267929395,
+      "precision": 0.9411039236254576,
+      "recall": 0.8856767842137208,
+      "mAP50": 0.936193525855273,
+      "mAP50_95": 0.7127915106683523
+    },
+    {
+      "format": "ONNX",
+      "size_mb": 11.7,
+      "mean_latency_ms": 112.83555030822754,
+      "throughput_fps": 8.862455115150741,
+      "precision": 0.9261851502946541,
+      "recall": 0.8983135475566734,
+      "mAP50": 0.9293588991095494,
+      "mAP50_95": 0.6974634409760547
+    },
+    {
+      "format": "NCNN",
+      "size_mb": 11.63,
+      "mean_latency_ms": 95.02709865570068,
+      "throughput_fps": 10.523314024593867,
+      "precision": 0.9261851436747374,
+      "recall": 0.89831346076736,
+      "mAP50": 0.9293588991095494,
+      "mAP50_95": 0.6974634409760547
+    }
+  ],
+  "comparison_plot_paths": {
+    "latency": "/kaggle/working/plots/comparison_latency.png",
+    "fps": "/kaggle/working/plots/comparison_fps.png",
+    "size": "/kaggle/working/plots/comparison_size.png",
+    "accuracy_map": "/kaggle/working/plots/comparison_map.png",
+    "precision_recall": "/kaggle/working/plots/comparison_precision_recall.png"
+  },
+  "sample_detections": {
+    "individual_images": [
+      "/kaggle/working/sample_detections/detection_37_jpg.rf.fcb3d7373721a8d2bbfa8e3e439948ad.jpg",
+      "/kaggle/working/sample_detections/detection_potholes429_png.rf.3302b3510d3a7cf491bee1171acb8e7c.jpg",
+      "/kaggle/working/sample_detections/detection_potholes52_png.rf.bf6cd93e929162d4486815d99ddf1e81.jpg",
+      "/kaggle/working/sample_detections/detection_potholes403_png.rf.9ef94a96f348aea516b954c8e111d5d3.jpg",
+      "/kaggle/working/sample_detections/detection_potholes260_png.rf.2b867525637a618083f4e73ac7907b92.jpg",
+      "/kaggle/working/sample_detections/detection_potholes266_png.rf.cf47c37a615c75796cfb1d1f772e5e32.jpg",
+      "/kaggle/working/sample_detections/detection_41_jpg.rf.8f95f446c589335f9ae1b642af1c4e85.jpg",
+      "/kaggle/working/sample_detections/detection_potholes460_png.rf.6979a58f1e799fe0e20ef5a8c5c728cd.jpg"
+    ],
+    "grid_image": "/kaggle/working/plots/sample_detections_grid.png",
+    "summary": [
+      {
+        "image": "37_jpg.rf.fcb3d7373721a8d2bbfa8e3e439948ad.jpg",
+        "num_detections": 4,
+        "confidences": [
+          0.8177485466003418,
+          0.8117229342460632,
+          0.7789947390556335,
+          0.44608446955680847
+        ],
+        "saved_path": "/kaggle/working/sample_detections/detection_37_jpg.rf.fcb3d7373721a8d2bbfa8e3e439948ad.jpg"
+      },
+      {
+        "image": "potholes429_png.rf.3302b3510d3a7cf491bee1171acb8e7c.jpg",
+        "num_detections": 1,
+        "confidences": [
+          0.8864243626594543
+        ],
+        "saved_path": "/kaggle/working/sample_detections/detection_potholes429_png.rf.3302b3510d3a7cf491bee1171acb8e7c.jpg"
+      },
+      {
+        "image": "potholes52_png.rf.bf6cd93e929162d4486815d99ddf1e81.jpg",
+        "num_detections": 1,
+        "confidences": [
+          0.928521454334259
+        ],
+        "saved_path": "/kaggle/working/sample_detections/detection_potholes52_png.rf.bf6cd93e929162d4486815d99ddf1e81.jpg"
+      },
+      {
+        "image": "potholes403_png.rf.9ef94a96f348aea516b954c8e111d5d3.jpg",
+        "num_detections": 3,
+        "confidences": [
+          0.9138000011444092,
+          0.911193311214447,
+          0.8949216604232788
+        ],
+        "saved_path": "/kaggle/working/sample_detections/detection_potholes403_png.rf.9ef94a96f348aea516b954c8e111d5d3.jpg"
+      },
+      {
+        "image": "potholes260_png.rf.2b867525637a618083f4e73ac7907b92.jpg",
+        "num_detections": 1,
+        "confidences": [
+          0.8310108780860901
+        ],
+        "saved_path": "/kaggle/working/sample_detections/detection_potholes260_png.rf.2b867525637a618083f4e73ac7907b92.jpg"
+      },
+      {
+        "image": "potholes266_png.rf.cf47c37a615c75796cfb1d1f772e5e32.jpg",
+        "num_detections": 5,
+        "confidences": [
+          0.932684600353241,
+          0.9206625819206238,
+          0.8982867002487183,
+          0.8709200620651245,
+          0.27386125922203064
+        ],
+        "saved_path": "/kaggle/working/sample_detections/detection_potholes266_png.rf.cf47c37a615c75796cfb1d1f772e5e32.jpg"
+      },
+      {
+        "image": "41_jpg.rf.8f95f446c589335f9ae1b642af1c4e85.jpg",
+        "num_detections": 8,
+        "confidences": [
+          0.8990519642829895,
+          0.8449392914772034,
+          0.8433616757392883,
+          0.7972548007965088,
+          0.7907944321632385,
+          0.7309738993644714,
+          0.7279369235038757,
+          0.5736184120178223
+        ],
+        "saved_path": "/kaggle/working/sample_detections/detection_41_jpg.rf.8f95f446c589335f9ae1b642af1c4e85.jpg"
+      },
+      {
+        "image": "potholes460_png.rf.6979a58f1e799fe0e20ef5a8c5c728cd.jpg",
+        "num_detections": 2,
+        "confidences": [
+          0.9131577014923096,
+          0.559488832950592
+        ],
+        "saved_path": "/kaggle/working/sample_detections/detection_potholes460_png.rf.6979a58f1e799fe0e20ef5a8c5c728cd.jpg"
+      }
+    ]
+  }
+}
