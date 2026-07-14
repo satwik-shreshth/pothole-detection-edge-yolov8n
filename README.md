@@ -8,12 +8,12 @@
 
 ---
 
-# 🕳️ Pothole Detection on the Edge — YOLOv8n
+#  Pothole Detection on the Edge — YOLOv8n
 ### Fine-Tuned Real-Time Pothole Detector with Cross-Format CPU Benchmarking for Embedded Deployment
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 This project fine-tunes **YOLOv8n** for real-time pothole detection and evaluates its readiness for deployment on resource-constrained edge hardware such as a Raspberry Pi–class robot.
 
@@ -23,7 +23,7 @@ The pipeline, from dataset preparation through training, export, and benchmarkin
 
 ---
 
-## 🎯 Aim of the Project
+##  Aim of the Project
 
 The primary aim of this project is to design and evaluate a **lightweight, edge-deployable pothole detection system** that:
 
@@ -36,7 +36,7 @@ The primary aim of this project is to design and evaluate a **lightweight, edge-
 
 ---
 
-## 🧠 System / Pipeline Architecture
+##  System / Pipeline Architecture
 
 The project is organized into **four stages**:
 
@@ -88,7 +88,7 @@ pothole-detection-edge-yolov8n/
 
 ---
 
-## 🔧 Hardware Context
+##  Hardware Context
 
 ### Target Deployment Platform
 - **Raspberry Pi–class embedded CPU** (or equivalent low-power edge device)
@@ -101,7 +101,7 @@ pothole-detection-edge-yolov8n/
 
 ---
 
-## 🧩 Software Requirements
+##  Software Requirements
 
 ### Core Dependencies
 ```bash
@@ -124,7 +124,7 @@ pip install ultralytics onnx onnxruntime ncnn opencv-python numpy pandas matplot
 
 ---
 
-## ▶️ Usage
+## ️ Usage
 
 ### Inference — PyTorch
 ```python
@@ -152,14 +152,14 @@ results = model.predict("path/to/image.jpg", save=True)
 
 ### Training (from scratch or fine-tuning)
 ```bash
-yolo detect train data=data.yaml model=yolov8n.pt epochs=100 imgsz=640
+yolo detect train data=data.yaml model=yolov8n.pt epochs=400 imgsz=640
 ```
 
 Full training configuration, augmentation settings, and export commands are documented step-by-step in `pothole-detection-for-robot.ipynb`.
 
 ---
 
-## 📊 Results
+##  Results
 
 | Format   | Notes                                            |
 |----------|---------------------------------------------------|
@@ -173,7 +173,7 @@ Training curves, PR curves, and confusion matrices are available in `plots/`. Qu
 
 ---
 
-## 🔬 Research Applications
+##  Research Applications
 
 ### Current Use Case
 - Feasibility study for deploying real-time object detection on CPU-only embedded hardware
@@ -188,7 +188,7 @@ Training curves, PR curves, and confusion matrices are available in `plots/`. Qu
 
 ---
 
-## 🎓 Educational Value
+##  Educational Value
 
 ### Learning Outcomes
 - **Computer Vision:** Object detection, YOLO architecture, model fine-tuning
@@ -198,7 +198,7 @@ Training curves, PR curves, and confusion matrices are available in `plots/`. Qu
 
 ---
 
-## 📜 License
+##  License
 
 This project is licensed under the **MIT License**.
 
@@ -206,7 +206,7 @@ See the [`LICENSE`](LICENSE) file for full terms.
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **Satwik Shreshth**
 MCA Final Year, Sikkim University
@@ -217,7 +217,7 @@ Research Areas: Machine Learning, Computer Vision, Embedded/Edge Systems, Roboti
 
 ---
 
-## 📚 Intended Use
+##  Intended Use
 
 ### Primary Applications
 - Academic and personal research in edge AI / embedded computer vision
@@ -226,7 +226,7 @@ Research Areas: Machine Learning, Computer Vision, Embedded/Edge Systems, Roboti
 
 ---
 
-## 🐛 Known Limitations
+##  Known Limitations
 
 - Benchmark is CPU-only and simulated; real on-device Raspberry Pi latency may differ
 - Single-class detection (potholes only) — no severity classification or size estimation
@@ -235,7 +235,7 @@ Research Areas: Machine Learning, Computer Vision, Embedded/Edge Systems, Roboti
 
 ---
 
-## ⚠️ Disclaimer
+##  Disclaimer
 
 This software is provided *"as is"* for research and educational purposes.
 
@@ -245,7 +245,7 @@ This software is provided *"as is"* for research and educational purposes.
 
 ---
 
-## 📖 Citation
+##  Citation
 
 If you use this work in academic research, please cite it as:
 
@@ -277,7 +277,7 @@ Available: https://github.com/satwik-shreshth/pothole-detection-edge-yolov8n
 
 ---
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - Ultralytics for the YOLOv8 framework
 - ONNX and Tencent NCNN communities for cross-platform inference tooling
@@ -285,7 +285,7 @@ Available: https://github.com/satwik-shreshth/pothole-detection-edge-yolov8n
 
 ---
 
-## 📞 Support & Contributions
+##  Support & Contributions
 
 ### Reporting Issues
 - Use GitHub Issues for bug reports
